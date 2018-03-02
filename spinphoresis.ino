@@ -34,10 +34,10 @@ void setup() {
 }
 
 void loop() {
-  if (!digitalRead(SINOBIT_BUTTON_A)) {
+  if (!digitalRead(SINOBIT_BUTTON_A) && (spinSpeed > 0.1)) {
     spinSpeed *= 0.9;
   }
-  if (!digitalRead(SINOBIT_BUTTON_B)) {
+  if (!digitalRead(SINOBIT_BUTTON_B) && (spinSpeed < 10)) {
     spinSpeed /= 0.9;
   }
   for (int point = 0; point < 8; point++ ){
