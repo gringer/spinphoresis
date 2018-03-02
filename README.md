@@ -1,4 +1,4 @@
-# spinphoresis
+# Spinphoresis
 Sino:bit arduino code for a spinning electrophoresis device
 
 Eventually this will control a device to carry out water electrophoresis (for filtering DNA by size),
